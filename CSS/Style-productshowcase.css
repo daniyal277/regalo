@@ -1,0 +1,104 @@
+body {
+      font-family: "Poppins", sans-serif;
+      font-weight: 200 !important;
+      margin: 0;
+      padding: 0;
+      background-color: #fdf8f2;
+      color: #333;
+  }
+
+  .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: flex-start;
+      max-width: 1000px;
+      margin: 20px auto;
+      padding: 20px;
+      gap: 40px;
+  }
+
+  .image-section {
+      flex: 1;
+      min-width: 300px;
+      max-width: 500px;
+  }
+
+  .image-section img {
+      width: 100%;
+      height: auto;
+      margin-top: 40px;
+      border-radius: 12px;
+  }
+
+  .details-section {
+      flex: 1;
+      min-width: 300px;
+      max-width: 600px;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      font-family: 'Poppins', sans-serif;
+  }
+
+  .details-section h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+  }
+
+  .price {
+      font-size: 20px;
+  }
+
+  .original {
+      text-decoration: line-through;
+      color: gray;
+      margin-right: 10px;
+  }
+
+  .discounted {
+      color: rgb(121 37 61);
+      font-weight: bold;
+  }
+
+  .quantity label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: 500;
+  }
+
+  .qty-box {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+  }
+
+  .qty-box button {
+      padding: 5px 10px;
+  }
+
+  .qty-box input {
+      width: 50px;
+      text-align: center;
+  }
+
+  .add-to-cart {
+      background-color: rgb(121 37 61);
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      font-weight: bold;
+      border-radius: 5px;
+      cursor: pointer;
+  }
+
+  .add-to-cart:hover {
+      background-color: #5a2323;
+  }
+
+  .accordion details {
+      border: 1px solid #ddd;
+      padding: 10px;
+      margin-top: 10px;
+      border-radius: 5px;
+  }

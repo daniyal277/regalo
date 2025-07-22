@@ -1,0 +1,310 @@
+/* Navbar Styles */
+.NavbarSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f0ece9;
+    background: linear-gradient(to bottom, #f0ece9, #f5f0ee);
+    height: 70px;
+    padding: 10px 20px;
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    min-height: 70px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.NavbarLogoImage {
+    height: 40px;
+    width: auto;
+    object-fit: contain;
+    min-height: 40px;
+}
+
+.NavbarItems {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.NavbarLogoContainer {
+    height: 60px;
+    width: auto;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60px;
+}
+
+.NavbarPages {
+    text-decoration: none;
+    color: #000000;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    padding: 5px 0;
+}
+
+.NavbarPages:hover {
+    color: rgb(120, 21, 49);
+}
+
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+}
+
+.hover-underline-animation::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(120, 21, 49);
+    transform-origin: bottom;
+    transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom;
+}
+
+.mobile-menu-btn {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: rgb(121, 37, 61);
+}
+
+/* Footer Styles */
+.footerSection {
+    background-color: rgb(231, 226, 210);
+    padding: 60px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.footerInnerSection {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    min-height: 300px;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.footerBoxOne,
+.footerBoxTwo,
+.footerBoxFour {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding: 20px;
+    width: 25%;
+    min-width: 200px;
+    box-sizing: border-box;
+}
+
+.footerBoxOne {
+    border-right: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.footerBoxTwo {
+    border-right: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.footerBoxFour {
+    border-right: none;
+}
+
+.boxOneText {
+    color: rgb(121, 37, 61);
+    font-size: 15px;
+    text-align: center;
+}
+
+.footerText {
+    font-size: 13px;
+    color: #000;
+    text-align: center;
+}
+
+.footerText>span {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.boxTwoHeading,
+.boxFourHeading {
+    color: rgb(121, 37, 61);
+    font-weight: 300;
+    font-size: 22px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.boxTwoText,
+.boxFourText {
+    font-size: 14px;
+    padding: 8px 0;
+    text-decoration: none;
+    color: #000;
+    text-align: center;
+}
+
+.boxFourIconsContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding-top: 55px;
+}
+
+.boxFourIconsContainer>p {
+    padding: 0 15px 0 0;
+    font-size: 14px;
+    color: #000;
+}
+
+.footerSocialIcons {
+    color: #000;
+    cursor: pointer;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+.footerSocialIcons:hover {
+    color: rgb(121, 37, 61);
+}
+
+.footerLogoBox {
+    height: 120px;
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footerLogoBox>img {
+    height: auto;
+    width: 100%;
+    object-fit: contain;
+}
+
+.footerCopyright {
+    font-size: 12px;
+    color: #333;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Responsive Design for footer */
+@media (max-width: 1200px) {
+    .footerSection {
+        padding: 40px 20px;
+    }
+
+    .footerInnerSection {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .footerInnerSection {
+        flex-wrap: wrap;
+        border: none;
+    }
+
+    .footerBoxOne,
+    .footerBoxTwo,
+    .footerBoxFour {
+        width: 50%;
+        min-width: unset;
+        border-right: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+        padding: 15px;
+    }
+
+    .footerBoxFour {
+        border-bottom: none;
+    }
+}
+
+@media (max-width: 576px) {
+    .footerBoxOne,
+    .footerBoxTwo,
+    .footerBoxFour {
+        width: 100%;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    }
+
+    .footerBoxFour {
+        border-bottom: none;
+    }
+
+    .footerLogoBox {
+        height: 100px;
+        width: 100px;
+    }
+}
+
+/* Responsive Design for navbar */
+@media (max-width: 768px) {
+    .NavbarSection {
+        padding: 10px 15px;
+    }
+
+    .NavbarItems {
+        display: none;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background-color: #f0ece9;
+        background: linear-gradient(to bottom, #f0ece9, #f5f0ee);
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px;
+        z-index: 100;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    }
+
+    .NavbarItems.active {
+        display: flex;
+    }
+
+    .mobile-menu-btn {
+        display: block;
+    }
+}
+
+@media (max-width: 576px) {
+    .NavbarSection {
+        padding: 10px;
+    }
+
+    .NavbarLogoImage {
+        height: 35px;
+    }
+
+    .NavbarLogoContainer {
+        height: 50px;
+    }
+}

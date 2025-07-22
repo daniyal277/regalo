@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f5f0ee;
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    text-align: center;
+}
+
+h1 {
+    color: rgb(121 37 61);
+}
+
+.filter-section {
+    margin: 20px 0;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.filter-btn {
+    padding: 8px 16px;
+    background-color: #fff;
+    border: 1px solid rgb(121 37 61);
+    color: rgb(121 37 61);
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: "Poppins", sans-serif;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+    background-color: rgb(121 37 61);
+    color: #fff;
+}
+
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.product-card {
+    background-color: transparent;
+    text-align: center;
+    text-decoration: none;
+    color: inherit;
+    width: 180px;
+    transition: transform 0.2s ease;
+    margin: 0 auto;
+}
+
+.product-card:hover {
+    transform: scale(1.03);
+    cursor: pointer;
+}
+
+.product-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-card h3 {
+    margin: 10px 0 4px;
+    font-size: 16px;
+    font-weight: 300;
+    color: #000;
+    flex-grow: 0;
+}
+
+.product-card .price {
+    font-size: 14px;
+    color: rgb(121 37 61);
+    flex-grow: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .product-container {
+        max-width: 750px;
+    }
+}
+
+@media (max-width: 768px) {
+    .product-container {
+        max-width: 360px;
+    }
+
+    .product-card {
+        width: 150px;
+    }
+
+    .product-card img {
+        height: 180px;
+    }
+}
+
+@media (max-width: 480px) {
+    .product-container {
+        max-width: 180px;
+    }
+
+    .product-card {
+        width: 100%;
+        max-width: 180px;
+    }
+
+    .product-card img {
+        height: 220px;
+    }
+}

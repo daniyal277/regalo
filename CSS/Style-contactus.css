@@ -1,0 +1,144 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 200 !important;
+    background-color: #f9f6ef;
+    color: #333;
+}
+
+.contact-section {
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-container {
+    display: flex;
+    width: 100%;
+    max-width: 1000px;
+}
+
+.contact-form {
+    flex: 1;
+    padding: 40px;
+    background-color: #f9f6ef;
+}
+
+.contact-form h1 {
+    text-align: center;
+    color: #5a0c27;
+    margin-bottom: 40px;
+}
+
+.form-title {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-bottom: 1px solid #333;
+    background: transparent;
+    outline: none;
+    font-family: "Poppins", sans-serif;
+
+}
+
+input::placeholder {
+    color: #7b2031;
+    font-weight: 300 !important;
+
+
+}
+
+textarea::placeholder {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300 !important;
+    color: #7b2031;
+}
+
+.half-width {
+    width: 48%;
+}
+
+textarea {
+    height: 100px;
+    resize: none;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #7b2031;
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: 0.4s;
+    border: 1px solid #7b2031;
+    font-family: "Poppins", sans-serif;
+
+
+}
+
+.submit-btn:hover {
+    background-color: #fff;
+    color: #7b2031;
+    transition: 0.4s;
+    border: 1px solid #7b2031;
+}
+
+.contact-image {
+    flex: 1;
+    background-image: url(../Images/Flux_Dev_A_clean_elegant_flat_lay_photo_with_a_maroon_and_whit_0.jpg);
+    background-size: cover;
+    background-position: 90%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+    }
+
+    .half-width {
+        width: 100%;
+    }
+
+    .contact-image {
+        height: 300px;
+    }
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1 {
+    text-align: center;
+    color: #5a0c27;
+    margin-bottom: 40px;
+    font-family: "Oswald", sans-serif;
+}
